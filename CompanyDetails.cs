@@ -54,7 +54,7 @@ namespace MarkSoft
             detail.PanCode = txtPan.Text;
             detail.Email = txtMail.Text;
             detail.MobileNo = txtMobile.Text;
-            man.save(detail);
+            man.save();
         }
     }
 }
