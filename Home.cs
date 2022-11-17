@@ -63,6 +63,7 @@ namespace MarkSoft
         {
             CustomerDetails customer = new CustomerDetails();
             customer.ShowDialog();
+            //scslsfdo ne
         }
     }
 }
