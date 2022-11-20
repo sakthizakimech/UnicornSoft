@@ -51,7 +51,7 @@ namespace MarkSoft
     {
         static string Cpath = FullControl.mPath + "customers.details";
         public static CustomerManager current;
-        Dictionary<string, CompanyData> customers = new Dictionary<string, CompanyData>();
+        public Dictionary<string, CompanyData> customers = new Dictionary<string, CompanyData>();
 
         public void save()
         {
@@ -60,6 +60,15 @@ namespace MarkSoft
             string data = JsonConvert.SerializeObject(this, Formatting.Indented);
             sw.Write(data);
             sw.Close();
+        }
+        public void  addCompanyData(CompanyData data)
+        {
+            
+            customers.Add(data.Name, data);
+        }
+        public void DeleteCompany(string cmpName)
+        {
+            customers.Remove(cmpName);
         }
         public static void loadCurrent()
         {
@@ -73,5 +82,7 @@ namespace MarkSoft
                 JsonConvert.PopulateObject(text, data);
             }
         }
+
+        
     }
 }

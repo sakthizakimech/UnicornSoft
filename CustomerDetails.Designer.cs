@@ -67,8 +67,7 @@
             this.colIec,
             this.colContact,
             this.colEmail});
-            this.CustomerTable.Enabled = false;
-            this.CustomerTable.Location = new System.Drawing.Point(12, 12);
+            this.CustomerTable.Location = new System.Drawing.Point(7, 12);
             this.CustomerTable.Name = "CustomerTable";
             this.CustomerTable.RowHeadersWidth = 51;
             this.CustomerTable.RowTemplate.Height = 24;
@@ -81,6 +80,7 @@
             this.colSno.MinimumWidth = 6;
             this.colSno.Name = "colSno";
             this.colSno.ReadOnly = true;
+            this.colSno.Width = 125;
             // 
             // colName
             // 
@@ -168,6 +168,7 @@
             this.btnDelete.TabIndex = 2;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // CustomerDetails
             // 
@@ -179,6 +180,7 @@
             this.Name = "CustomerDetails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "CustomerDetails";
+            this.Load += new System.EventHandler(this.CustomerDetails_Load);
             ((System.ComponentModel.ISupportInitialize)(this.CustomerTable)).EndInit();
             this.GBRowsControl.ResumeLayout(false);
             this.ResumeLayout(false);

@@ -24,7 +24,7 @@ namespace MarkSoft
                 SaveCustomer();
             else if(this.Tag=="me")
                 SaveMe();
-            
+            this.Close();
         }
         public void SaveMe()
         {
@@ -45,6 +45,8 @@ namespace MarkSoft
         {
             CustomerManager man = new CustomerManager();
             CompanyData detail = new CompanyData();
+            CustomerManager.loadCurrent();
+            man.customers = CustomerManager.current.customers;
             detail.Name = CompName.Text;
             detail.AddLineOne = compLine1.Text;
             detail.AddLineTwo = compLine2.Text;
@@ -54,6 +56,7 @@ namespace MarkSoft
             detail.PanCode = txtPan.Text;
             detail.Email = txtMail.Text;
             detail.MobileNo = txtMobile.Text;
+            man.addCompanyData(detail);
             man.save();
         }
     }

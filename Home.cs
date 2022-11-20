@@ -11,10 +11,10 @@ using System.Windows.Forms;
 namespace MarkSoft
 {
     
-    public partial class Home : Form
+    public partial class BusinessManager : Form
     {
         FullControl controler;
-        public Home()
+        public BusinessManager()
         {
             InitializeComponent();
             controler = new FullControl();
@@ -25,18 +25,14 @@ namespace MarkSoft
         {
             controler.ObjInvoice.ShowDialog();
         }
-
-        private void BtnDB_Click(object sender, EventArgs e)
+        private void btnCust_Click(object sender, EventArgs e)
         {
-            controler.ObjDB.ShowDialog();
+            CustomerDetails customer = new CustomerDetails();
+            customer.ShowDialog();
+            //scslsfdo ne
         }
 
-        private void BtnExit_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void BtnProfile_Click(object sender, EventArgs e)
+        private void btnProfile_Click(object sender, EventArgs e)
         {
             this.Hide();
             CompanyData detail = CompanyManager.loadCurrent();
@@ -59,11 +55,15 @@ namespace MarkSoft
             this.Show();
         }
 
-        private void btnCust_Click(object sender, EventArgs e)
+        private void btnDb_Click(object sender, EventArgs e)
         {
-            CustomerDetails customer = new CustomerDetails();
-            customer.ShowDialog();
-            //scslsfdo ne
+            controler.ObjDB.ShowDialog();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Do you want to close ?", FullControl.AppName, MessageBoxButtons.OKCancel) == DialogResult.OK)
+                this.Close();
         }
     }
 }

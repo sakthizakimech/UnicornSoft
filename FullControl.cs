@@ -9,8 +9,16 @@ namespace MarkSoft
 {
     public class FullControl
     {
+
         private InvoiceMaker InvoiceForm;
         private DataBase DbForm;
+        public static string AppName
+        {
+            get
+            {
+                return "BUSINESS MANAGER @ UNICORNSOFT";
+            }
+        }
         public InvoiceMaker ObjInvoice
         {
             get {
