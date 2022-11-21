@@ -24,11 +24,17 @@ namespace MarkSoft
     }
     public class CompanyManager
     {
-        static string Cpath = FullControl.mPath + "seller.details";
+        public CompanyManager()
+        {
+            if (!Directory.Exists(FullControl.mPath + @"Info\"))
+                Directory.CreateDirectory(FullControl.mPath + @"Info\");
+        }
+        static string Cpath = FullControl.mPath + @"Info\seller.details";
         public void save(CompanyData details)
         {
             StreamWriter sw;
                 sw=File.CreateText(Cpath);
+
             string data = JsonConvert.SerializeObject(details,Formatting.Indented);
             sw.Write(data);
             sw.Close();
@@ -49,7 +55,12 @@ namespace MarkSoft
     }
     public class CustomerManager
     {
-        static string Cpath = FullControl.mPath + "customers.details";
+        public CustomerManager() 
+        {
+            if (!Directory.Exists(FullControl.mPath + @"Info\"))
+                Directory.CreateDirectory(FullControl.mPath + @"Info\");
+        }
+        static string Cpath = FullControl.mPath + @"Info\customers.details";
         public static CustomerManager current;
         public Dictionary<string, CompanyData> customers = new Dictionary<string, CompanyData>();
 

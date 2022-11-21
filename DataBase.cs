@@ -111,7 +111,7 @@ namespace MarkSoft
     }
     class productManager
     {
-        static string DbPath = FullControl.mPath+"Product.db";
+        static string DbPath = FullControl.mPath+@"Product\Product.db";
         public Dictionary<string, product> tempDict = new Dictionary<string, product>();
         public static productManager CurrentProducts;
         public void Save()

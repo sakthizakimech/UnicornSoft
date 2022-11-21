@@ -57,15 +57,9 @@ namespace MarkSoft
 
         private void btnDb_Click(object sender, EventArgs e)
         {
-<<<<<<< .mine
+
             controler.ObjDB.ShowDialog();
-
-
-=======
-            CustomerDetails customer = new CustomerDetails();
-            customer.ShowDialog();
-            //scslsfdo nefdf-f---
->>>>>>> .theirs
+           
         }
 
         private void btnExit_Click(object sender, EventArgs e)

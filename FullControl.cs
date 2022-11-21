@@ -16,7 +16,7 @@ namespace MarkSoft
         {
             get
             {
-                return "BUSINESS MANAGER @ UNICORNSOFT";
+                return "UNICORN BUSINESS MANAGER";
             }
         }
         public InvoiceMaker ObjInvoice
@@ -31,7 +31,13 @@ namespace MarkSoft
         }
         public static string mPath
         {
-            get { return @"C:\LeoGlobe\Data\"; }
+            get { 
+            
+                string path = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles)+ @"\UNICORNSOFT\";
+                if (!System.IO.Directory.Exists(path))
+                    System.IO.Directory.CreateDirectory(path);
+                return path;
+            }
         }
         public DataBase ObjDB
         {

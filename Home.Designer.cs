@@ -37,12 +37,14 @@
             this.btnCust = new System.Windows.Forms.Button();
             this.btnInvoice = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.listView1 = new System.Windows.Forms.ListView();
             this.LGHomeTab.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // LGHomeTab
             // 
+            this.LGHomeTab.Controls.Add(this.listView1);
             this.LGHomeTab.Controls.Add(this.toolStrip1);
             this.LGHomeTab.Controls.Add(this.btnCust);
             this.LGHomeTab.Controls.Add(this.btnInvoice);
@@ -122,6 +124,15 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+            // listView1
+            // 
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(163, 180);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(121, 97);
+            this.listView1.TabIndex = 6;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            // 
             // BusinessManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -152,6 +163,7 @@
         private System.Windows.Forms.ToolStripButton btnDb;
         private System.Windows.Forms.ToolStripButton btnExit;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ListView listView1;
     }
 }
 
