@@ -19,19 +19,6 @@ namespace MarkSoft
             InitializeComponent();
             controler = new FullControl();
         }
-
-
-        private void btnInvoice_Click(object sender, EventArgs e)
-        {
-            controler.ObjInvoice.ShowDialog();
-        }
-        private void btnCust_Click(object sender, EventArgs e)
-        {
-            CustomerDetails customer = new CustomerDetails();
-            customer.ShowDialog();
-            //scslsfdo ne
-        }
-
         private void btnProfile_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -52,9 +39,27 @@ namespace MarkSoft
             }
             edit.ShowDialog();
             edit.Tag = "me";
+            DisplayComDetails();
             this.Show();
         }
+        private void DisplayComDetails()
+        {
+            CompanyData detail = CompanyManager.loadCurrent();
+            CompanyDetails edit = new CompanyDetails();
+            if (detail != null)
+            {
+                HomeComDisplay.Items.Add(detail.Name);
+                HomeComDisplay.Items.Add(detail.AddLineOne);
+                HomeComDisplay.Items.Add(detail.AddLineTwo);
+                HomeComDisplay.Items.Add(detail.AddLineThree);
+                HomeComDisplay.Items.Add(detail.IecCode);
+                HomeComDisplay.Items.Add(detail.GstCode);
+                HomeComDisplay.Items.Add(detail.PanCode);
+                HomeComDisplay.Items.Add(detail.Email);
+                HomeComDisplay.Items.Add(detail.MobileNo);
 
+            }
+        }
         private void btnDb_Click(object sender, EventArgs e)
         {
 
@@ -67,5 +72,57 @@ namespace MarkSoft
             if (MessageBox.Show("Do you want to close ?", FullControl.AppName, MessageBoxButtons.OKCancel) == DialogResult.OK)
                 this.Close();
         }
+
+        private void BusinessManager_Load(object sender, EventArgs e)
+        {
+            DisplayComDetails();
+            dictTabs();
+
+        }
+        private Dictionary<string, TabPage> tabs = null;
+
+        private void btnCustomer_Click(object sender, EventArgs e)
+        {
+            CustomerDetails customer = new CustomerDetails();
+            customer.ShowDialog();
+            //scslsfdo necontroler.ObjInvoice.ShowDialog();
+        }
+        void dictTabs()
+        {
+            tabs = new Dictionary<string, TabPage>();
+            foreach (TabPage tab in MainTab.TabPages)
+            {
+                tabs.Add(tab.Name,tab);
+                MainTab.TabPages.Remove(tab);
+            }
+            show("tabMonthReport");
+        }
+        private void show(string tabname)
+        {
+            MainTab.TabPages.Clear();
+            if (tabs.TryGetValue(tabname, out TabPage current) == true)
+                MainTab.TabPages.Add(current);
+        }
+        private void btnIcreate_Click(object sender, EventArgs e)
+        {
+            show("tabIcreate");
+        }
+
+        private void btnImanage_Click(object sender, EventArgs e)
+        {
+            show("tabImanage");
+        }
+
+        private void btnPmanage_Click(object sender, EventArgs e)
+        {
+            show("tabPmanage");
+        }
+
+        private void btnPcreate_Click(object sender, EventArgs e)
+        {
+            show("tabPcreate");
+        }
+
+      
     }
 }

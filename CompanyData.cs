@@ -60,7 +60,7 @@ namespace MarkSoft
             if (!Directory.Exists(FullControl.mPath + @"Info\"))
                 Directory.CreateDirectory(FullControl.mPath + @"Info\");
         }
-        static string Cpath = FullControl.mPath + @"Info\customers.details";
+        static string Cpath = FullControl.mPath + @"\Info\customers.details";
         public static CustomerManager current;
         public Dictionary<string, CompanyData> customers = new Dictionary<string, CompanyData>();
 

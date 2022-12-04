@@ -85,6 +85,9 @@ namespace MarkSoft
         private void display()
         {
             productManager.getProductDetails();
+            if (productManager.CurrentProducts.tempDict.Count < 1)
+                return;
+
             foreach(var data in productManager.CurrentProducts.tempDict)
             {
                 ProductTable.Rows.Clear();
@@ -126,10 +129,10 @@ namespace MarkSoft
         public static void getProductDetails()
         {
             productManager prod = new productManager();
-
+            CurrentProducts = prod;
             if (File.Exists(DbPath))
             {
-                CurrentProducts = prod;
+                
                 string dbData = File.ReadAllText(DbPath);
                 JsonConvert.PopulateObject(dbData, prod);
             }
@@ -142,8 +145,6 @@ namespace MarkSoft
         public string productColor;
         public string productPrice;
         public string productHsn;
-        private DataGridViewCellCollection cells;
-
         public product(DataGridViewCellCollection cells)
         {
             productDesc = cells[0].Value.ToString();

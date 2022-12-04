@@ -33,7 +33,7 @@ namespace MarkSoft
         {
             get { 
             
-                string path = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles)+ @"\UNICORNSOFT\";
+                string path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)+ @"\UNICORNSOFT\";
                 if (!System.IO.Directory.Exists(path))
                     System.IO.Directory.CreateDirectory(path);
                 return path;
