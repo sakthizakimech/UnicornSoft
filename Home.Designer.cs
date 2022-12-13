@@ -112,7 +112,7 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.MainTab);
             this.splitContainer1.Size = new System.Drawing.Size(1776, 513);
-            this.splitContainer1.SplitterDistance = 614;
+            this.splitContainer1.SplitterDistance = 613;
             this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 6;
             // 
@@ -130,7 +130,7 @@
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 65F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(612, 511);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(611, 511);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // HomeComDisplay
@@ -146,7 +146,7 @@
             this.HomeComDisplay.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
             this.HomeComDisplay.Name = "HomeComDisplay";
             this.HomeComDisplay.SelectionMode = System.Windows.Forms.SelectionMode.None;
-            this.HomeComDisplay.Size = new System.Drawing.Size(586, 309);
+            this.HomeComDisplay.Size = new System.Drawing.Size(585, 309);
             this.HomeComDisplay.TabIndex = 0;
             // 
             // Logo
@@ -155,7 +155,7 @@
             this.Logo.Location = new System.Drawing.Point(4, 4);
             this.Logo.Margin = new System.Windows.Forms.Padding(4);
             this.Logo.Name = "Logo";
-            this.Logo.Size = new System.Drawing.Size(604, 170);
+            this.Logo.Size = new System.Drawing.Size(603, 170);
             this.Logo.TabIndex = 1;
             this.Logo.TabStop = false;
             // 
@@ -171,7 +171,7 @@
             this.MainTab.Margin = new System.Windows.Forms.Padding(4);
             this.MainTab.Name = "MainTab";
             this.MainTab.SelectedIndex = 0;
-            this.MainTab.Size = new System.Drawing.Size(1155, 511);
+            this.MainTab.Size = new System.Drawing.Size(1156, 511);
             this.MainTab.TabIndex = 0;
             // 
             // tabIcreate
@@ -182,7 +182,7 @@
             this.tabIcreate.Margin = new System.Windows.Forms.Padding(4);
             this.tabIcreate.Name = "tabIcreate";
             this.tabIcreate.Padding = new System.Windows.Forms.Padding(4);
-            this.tabIcreate.Size = new System.Drawing.Size(1147, 482);
+            this.tabIcreate.Size = new System.Drawing.Size(1148, 482);
             this.tabIcreate.TabIndex = 0;
             this.tabIcreate.Text = "Create Invoice";
             // 
@@ -202,7 +202,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1139, 474);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1140, 474);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tabImanage
@@ -212,7 +212,7 @@
             this.tabImanage.Margin = new System.Windows.Forms.Padding(4);
             this.tabImanage.Name = "tabImanage";
             this.tabImanage.Padding = new System.Windows.Forms.Padding(4);
-            this.tabImanage.Size = new System.Drawing.Size(1147, 482);
+            this.tabImanage.Size = new System.Drawing.Size(1148, 482);
             this.tabImanage.TabIndex = 1;
             this.tabImanage.Text = "Manage Invoice";
             // 
@@ -222,7 +222,7 @@
             this.tabPcreate.Location = new System.Drawing.Point(4, 25);
             this.tabPcreate.Margin = new System.Windows.Forms.Padding(4);
             this.tabPcreate.Name = "tabPcreate";
-            this.tabPcreate.Size = new System.Drawing.Size(1147, 482);
+            this.tabPcreate.Size = new System.Drawing.Size(1148, 482);
             this.tabPcreate.TabIndex = 2;
             this.tabPcreate.Text = "Create Purchase Order";
             // 
@@ -232,7 +232,7 @@
             this.tabPmanage.Location = new System.Drawing.Point(4, 25);
             this.tabPmanage.Margin = new System.Windows.Forms.Padding(4);
             this.tabPmanage.Name = "tabPmanage";
-            this.tabPmanage.Size = new System.Drawing.Size(1147, 482);
+            this.tabPmanage.Size = new System.Drawing.Size(1148, 482);
             this.tabPmanage.TabIndex = 3;
             this.tabPmanage.Text = "Manage Purchase Order";
             // 
@@ -242,7 +242,7 @@
             this.tabMonthReport.Location = new System.Drawing.Point(4, 25);
             this.tabMonthReport.Margin = new System.Windows.Forms.Padding(4);
             this.tabMonthReport.Name = "tabMonthReport";
-            this.tabMonthReport.Size = new System.Drawing.Size(1147, 482);
+            this.tabMonthReport.Size = new System.Drawing.Size(1148, 482);
             this.tabMonthReport.TabIndex = 4;
             this.tabMonthReport.Text = "Monthly Report";
             // 
@@ -269,7 +269,7 @@
             this.btnProfile.Image = global::MarkSoft.Properties.Resources.profile;
             this.btnProfile.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnProfile.Name = "btnProfile";
-            this.btnProfile.Size = new System.Drawing.Size(56, 49);
+            this.btnProfile.Size = new System.Drawing.Size(66, 49);
             this.btnProfile.Text = "Profile";
             this.btnProfile.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
@@ -284,7 +284,7 @@
             this.toolInvoice.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.toolInvoice.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolInvoice.Name = "toolInvoice";
-            this.toolInvoice.Size = new System.Drawing.Size(70, 49);
+            this.toolInvoice.Size = new System.Drawing.Size(82, 49);
             this.toolInvoice.Text = "Invoice";
             this.toolInvoice.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolInvoice.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -292,21 +292,21 @@
             // btnIcreate
             // 
             this.btnIcreate.Name = "btnIcreate";
-            this.btnIcreate.Size = new System.Drawing.Size(146, 26);
+            this.btnIcreate.Size = new System.Drawing.Size(162, 30);
             this.btnIcreate.Text = "Create";
             this.btnIcreate.Click += new System.EventHandler(this.btnIcreate_Click);
             // 
             // btnImanage
             // 
             this.btnImanage.Name = "btnImanage";
-            this.btnImanage.Size = new System.Drawing.Size(146, 26);
+            this.btnImanage.Size = new System.Drawing.Size(162, 30);
             this.btnImanage.Text = "Manage";
             this.btnImanage.Click += new System.EventHandler(this.btnImanage_Click);
             // 
             // btnIupdate
             // 
             this.btnIupdate.Name = "btnIupdate";
-            this.btnIupdate.Size = new System.Drawing.Size(146, 26);
+            this.btnIupdate.Size = new System.Drawing.Size(162, 30);
             this.btnIupdate.Text = "Update";
             // 
             // toolPurchase
@@ -319,7 +319,7 @@
             this.toolPurchase.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.toolPurchase.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolPurchase.Name = "toolPurchase";
-            this.toolPurchase.Size = new System.Drawing.Size(123, 49);
+            this.toolPurchase.Size = new System.Drawing.Size(147, 49);
             this.toolPurchase.Text = "Purchase Order";
             this.toolPurchase.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolPurchase.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -327,21 +327,21 @@
             // btnPcreate
             // 
             this.btnPcreate.Name = "btnPcreate";
-            this.btnPcreate.Size = new System.Drawing.Size(146, 26);
+            this.btnPcreate.Size = new System.Drawing.Size(162, 30);
             this.btnPcreate.Text = "Create";
             this.btnPcreate.Click += new System.EventHandler(this.btnPcreate_Click);
             // 
             // btnPmanage
             // 
             this.btnPmanage.Name = "btnPmanage";
-            this.btnPmanage.Size = new System.Drawing.Size(146, 26);
+            this.btnPmanage.Size = new System.Drawing.Size(162, 30);
             this.btnPmanage.Text = "Manage";
             this.btnPmanage.Click += new System.EventHandler(this.btnPmanage_Click);
             // 
             // btnPupdate
             // 
             this.btnPupdate.Name = "btnPupdate";
-            this.btnPupdate.Size = new System.Drawing.Size(146, 26);
+            this.btnPupdate.Size = new System.Drawing.Size(162, 30);
             this.btnPupdate.Text = "Update";
             // 
             // btnCustomer
@@ -360,7 +360,7 @@
             this.btnDb.Image = global::MarkSoft.Properties.Resources.icons8_database_administrator_50;
             this.btnDb.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnDb.Name = "btnDb";
-            this.btnDb.Size = new System.Drawing.Size(131, 49);
+            this.btnDb.Size = new System.Drawing.Size(157, 49);
             this.btnDb.Text = "Product Database";
             this.btnDb.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnDb.Click += new System.EventHandler(this.btnDb_Click);
@@ -413,6 +413,7 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Business Manager";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.BusinessManager_Load);
             this.LGHomeTab.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);

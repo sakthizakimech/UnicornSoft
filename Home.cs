@@ -45,6 +45,7 @@ namespace MarkSoft
         private void DisplayComDetails()
         {
             CompanyData detail = CompanyManager.loadCurrent();
+            HomeComDisplay.Items.Clear();
             CompanyDetails edit = new CompanyDetails();
             if (detail != null)
             {
@@ -57,7 +58,6 @@ namespace MarkSoft
                 HomeComDisplay.Items.Add(detail.PanCode);
                 HomeComDisplay.Items.Add(detail.Email);
                 HomeComDisplay.Items.Add(detail.MobileNo);
-
             }
         }
         private void btnDb_Click(object sender, EventArgs e)
